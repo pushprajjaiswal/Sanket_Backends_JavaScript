@@ -1,0 +1,48 @@
+scopes in javascript
+--------------------
+where is your function and variable visible
+
+//Do you think javascript compile or interepeted
+interpreter -> line by line
+compile -> all at once
+
+Javacsript is not Purely Intetrepeted { Habrid Architecture }. It's a Compiled Language with an Interpreted Feature. 
+
+
+1.> Parsing =>.. what happen durung parsing ? (Scope resulataion )
+   - the code text is converted into an abstract syntax tree (AST) which represents the structure of the code
+2.> Execution
+
+
+
+Type of Scope
+1.> global 
+2.> function
+3.> block (if, for etc.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### local scope
+- a block of code enclosed within curly braces `{}` or between the keywords `
+`for`, `if`, `while`. 
+- it can contain variables, functions.
+javascript has two types of local scopes:
+  1. Function Scope - declared inside a function body. 
+  2. Block Scope    - declared using `let` and `const` keywords.
+  ### function scope
+  - a function can access variables declared in the function body, or variables declared in the function parameters
