@@ -32,3 +32,45 @@ console.log(result);
 
 const cuberesult = arr.map(cube);
 console.log(cuberesult);
+
+
+/**
+ * when to use map  ?
+ * in any situation when  we have to do an operation on every element of the array
+ * and store the result of each operation
+ * mao can be a good option
+ * 
+ * for example:
+ * Array of products objects.
+ * 
+ */
+
+
+const newArr = [9,7,5,6,3,4,5];
+/**
+ * if the function that we are paasing in map takes two arguments
+ * then first argument will be passing the actual value
+ * second argument will be accessing index of the value
+ */
+function print(element, idx) {
+    return `Element at ${idx} is ${element}`;
+}
+
+/**
+ * here map is looping over every element
+ * and then passing element, index int the function print
+ */
+
+const result2 = newArr.map(print);
+console.log(result2);
+
+function customMapper(arr, func) {
+    let result = [];
+    for(let i = 0; i < arr.length; i++) {
+        result.push(func(arr[i], i));
+    }
+    return result;
+}
+
+const value = customMapper(newArr, print);
+console.log(value);
